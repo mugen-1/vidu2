@@ -27,7 +27,7 @@
 						| <a href="${pageContext.request.contextPath }/logout">Đăng Xuất</a></li>
 					<li><i class="search fa fa-search search-button"></i></li>
 				</ul>
-			</div>
+</div>
 		</c:otherwise>
 	</c:choose>
 </body>

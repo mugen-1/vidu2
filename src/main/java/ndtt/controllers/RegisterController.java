@@ -70,10 +70,6 @@ public class RegisterController extends HttpServlet {
 	}if(service.checkExistUsername(username))
 	{
 		alertMsg = "Tài khoản đã tồn tại!";
-		req.setAttribute("alert", alertMsg);
-		RequestDispatcher rd = req.getRequestDispatcher("/views/home.jsp");
-		rd.forward(req, resp);
-		return;
 		boolean isSuccess = service.register(username, password, email,
 				fullname, phone);
 				if (isSuccess) { 
